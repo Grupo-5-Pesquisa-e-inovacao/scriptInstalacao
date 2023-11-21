@@ -3,6 +3,8 @@
 
 sudo apt update -y && sudo apt upgrade -y
 
+mv Dockerfile.txt Dockerfile
+
 # Verifica se o Java está instalado
 java -version
 if [ $? = 0 ]; then
