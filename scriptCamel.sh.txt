@@ -3,7 +3,7 @@
 
 sudo apt update -y && sudo apt upgrade -y
 
-mv Dockerfile.txt Dockerfile
+mv /scriptInstalacao/Dockerfile.txt /scriptInstalacao/Dockerfile
 
 # Verifica se o Java está instalado
 java -version
