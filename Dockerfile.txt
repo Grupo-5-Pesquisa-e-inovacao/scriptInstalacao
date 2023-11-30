@@ -1,7 +1,0 @@
-FROM mysql:latest
-
-ENV MYSQL_ROOT_PASSWORD=senhaDificil235813
-
-COPY ./arquivos_sql/ /docker-entrypoint-initbd.d/
-
-EXPOSE 3306

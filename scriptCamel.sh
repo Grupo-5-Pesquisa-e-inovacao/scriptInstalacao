@@ -1,9 +1,6 @@
 #!/bin/bash
 
-
 sudo apt update -y && sudo apt upgrade -y
-
-mv /scriptInstalacao/Dockerfile.txt /scriptInstalacao/Dockerfile
 
 # Verifica se o Java está instalado
 java -version
@@ -29,6 +26,7 @@ sudo usermod -aG docker $USER
 sudo docker build -t bancocamel .
 
 sudo docker run -d --name containerCamel -p 3306:3306 bancocamel
+
 
 REPO_NAME="Sprint3"
 GITHUB_URL="https://github.com/Grupo-5-Pesquisa-e-inovacao/Sprint3.git"
